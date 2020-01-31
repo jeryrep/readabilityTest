@@ -8,16 +8,13 @@
         {
             if (ReadabilityScore < 3)
             {
-                return (int) ReadabilityScore + 5;
-            } 
+                return (int)ReadabilityScore + 5;
+            }
             else if (ReadabilityScore >= 3 && ReadabilityScore <= 12)
             {
-                return (int) ReadabilityScore + 6;
+                return (int)ReadabilityScore + 6;
             }
-            else
-            {
-                return 24;
-            }
+            return 24;
         }
 
         private double CountReadabilityScore() =>

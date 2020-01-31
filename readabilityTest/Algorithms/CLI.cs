@@ -27,12 +27,11 @@ namespace readabilityTest.Algorithms
                 }
                 else if (c == '.')
                 {
-                    if (i != length - 1 && _textProperties.Text[i+1] == ' ')
+                    if (i != length - 1 && _textProperties.Text[i + 1] == ' ')
                     {
                         sentenceCount++;
                     }
                 }
-
             }
             int wordCount = spaceCount + 1;
 
