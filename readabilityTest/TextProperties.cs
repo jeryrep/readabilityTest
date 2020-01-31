@@ -29,13 +29,13 @@ namespace readabilityTest
             int totalVowels = 0;
             foreach (string word in words)
             {
-                for (int j = 0; j < word.Length; j++)
+                for (int i = 0; i < word.Length; i++)
                 {
-                    if (vowels.IndexOf(word[j]) == -1 || j == word.Length - 1 && word[j] != 'e') 
+                    if (vowels.IndexOf(word[i]) == -1 || i == word.Length - 1 && word[i] != 'e') 
                         continue;
                     wordVowelCount++;
-                    if (j != word.Length - 1 && vowels.IndexOf(word[j + 1]) != -1)
-                        j++;
+                    if (i != word.Length - 1 && vowels.IndexOf(word[i + 1]) != -1)
+                        i++;
                 }
                 totalVowels += wordVowelCount;
                 wordVowelCount = 0;
@@ -51,12 +51,12 @@ namespace readabilityTest
             int polysyllablesCount = 0;
             foreach (string word in words)
             {
-                for (int j = 0; j < word.Length; j++)
+                for (int i = 0; i < word.Length; i++)
                 {
-                    if (vowels.IndexOf(word[j]) == -1 || j == word.Length - 1 && word[j] != 'e') continue;
+                    if (vowels.IndexOf(word[i]) == -1 || i == word.Length - 1 && word[i] != 'e') continue;
                     wordVowelCount++;
-                    if (j != word.Length - 1 && vowels.IndexOf(word[j + 1]) != -1)
-                        j++;
+                    if (i != word.Length - 1 && vowels.IndexOf(word[i + 1]) != -1)
+                        i++;
                 }
                 if (wordVowelCount > 2)
                     polysyllablesCount++;
