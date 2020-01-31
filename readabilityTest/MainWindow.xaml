@@ -7,11 +7,23 @@
         FontFamily="Verdana"
         FontSize="15"
         Title="Readability Test" Height="475" Width="900">
-    <Grid Background="#DC9D47">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="White"/>
+                <GradientStop Color="#FF7A0F0F" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
         <StackPanel>
-            <Label Grid.Row="2" Margin="5" Content="Enter some text: " />
-            <TextBox Grid.Row="1" Name="Text" Margin="15" Height="200" TextWrapping="Wrap" AcceptsTab="True" SpellCheck.IsEnabled="True" />
-            <Button Content="Calculate Readability Test" Width="250" Height="40" Background="Gold" Click="Button_Click" />
+            <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFF96A16" Offset="0"/>
+                    <GradientStop Color="#FFE0B628" Offset="1"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <Label FontFamily="Century Gothic" Grid.Row="2" Margin="5" Content="App for checking readability of given text." HorizontalAlignment="Center" FontSize="20"/>
+            <TextBox Grid.Row="1" Name="Text" Margin="15,0,15,15" Height="200" TextWrapping="Wrap" AcceptsTab="True" BorderBrush="Black" Foreground="Black" SelectionTextBrush="White" Background="#FFBDBDBD" />
+            <Button Content="Calculate Readability" Width="250" Height="40" Background="#FFC7A803" Click="Button_Click" Foreground="#FF3A0E0E"/>
             <WrapPanel Width="900">
                 <TextBlock Width="900"></TextBlock>
                 <TextBlock Name="Words" Width="300" Margin="5,0,0,0"></TextBlock>

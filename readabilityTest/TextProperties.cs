@@ -53,7 +53,8 @@ namespace readabilityTest
             {
                 for (int i = 0; i < word.Length; i++)
                 {
-                    if (vowels.IndexOf(word[i]) == -1 || i == word.Length - 1 && word[i] != 'e') continue;
+                    if (vowels.IndexOf(word[i]) == -1 || i == word.Length - 1 && word[i] != 'e') 
+                        continue;
                     wordVowelCount++;
                     if (i != word.Length - 1 && vowels.IndexOf(word[i + 1]) != -1)
                         i++;
