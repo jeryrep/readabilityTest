@@ -1,0 +1,28 @@
+﻿<Window x:Class="readabilityTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:readabilityTest"
+        mc:Ignorable="d"
+        Title="Readability Test" Height="500" Width="800">
+    <Grid Background="CadetBlue">
+        <StackPanel>
+            <Label Grid.Row="2" Margin="5" Content="Enter some text: "/>
+            <TextBox Grid.Row="1" Name="Text" Margin="5" Height="200" TextWrapping="Wrap" AcceptsTab="True" SpellCheck.IsEnabled="True"/>
+            <Button Content="Calculate Readability Test" Width="165" Click="Button_Click"/>
+            <TextBlock Name="Words" Margin="5,0,0,0"></TextBlock>
+            <TextBlock Name="Sentences" Margin="5,0,0,0"></TextBlock>
+            <TextBlock Name="Characters" Margin="5,0,0,0"></TextBlock>
+            <TextBlock Name="Syllables" Margin="5,0,0,0"></TextBlock>
+            <TextBlock Name="Polysyllables" Margin="5,0,0,0"></TextBlock>
+            <TextBlock></TextBlock>
+            <TextBlock Name="Ari" Margin="5,0,0,0"></TextBlock>
+            <TextBlock Name="Fkr" Margin="5,0,0,0"></TextBlock>
+            <TextBlock Name="Smog" Margin="5,0,0,0"></TextBlock>
+            <TextBlock Name="Cli" Margin="5,0,0,0"></TextBlock>
+            <TextBlock Name="Average" Margin="5,0,0,0"></TextBlock>
+        </StackPanel>
+        
+    </Grid>
+</Window>
