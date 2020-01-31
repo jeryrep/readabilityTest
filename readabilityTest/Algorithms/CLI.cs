@@ -2,7 +2,7 @@
 
 namespace readabilityTest.Algorithms
 {
-    internal class Cli
+    internal class Cli : IAlgorithm
     {
         private readonly TextProperties _textProperties;
 

@@ -2,7 +2,7 @@
 
 namespace readabilityTest.Algorithms
 {
-    internal class Fkr
+    internal class Fkr : IAlgorithm
     {
         private readonly TextProperties _textProperties;
 

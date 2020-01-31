@@ -16,7 +16,7 @@ namespace readabilityTest
             int sentenceCount = (from char delimiter in Text
                                  where delimiters.IndexOf(delimiter) != -1
                                  select delimiter).Count();
-            return (Text.EndsWith('?') || Text.EndsWith('!') || Text.EndsWith('.')) ? sentenceCount : ++sentenceCount;
+            return Text.EndsWith('?') || Text.EndsWith('!') || Text.EndsWith('.') ? sentenceCount : ++sentenceCount;
         }
 
         private int CountCharacters() => Text.Count(character => !char.IsWhiteSpace(character));

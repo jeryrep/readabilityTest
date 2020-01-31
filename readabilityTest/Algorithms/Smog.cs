@@ -2,7 +2,7 @@
 
 namespace readabilityTest.Algorithms
 {
-    internal class Smog
+    internal class Smog : IAlgorithm
     {
         private readonly TextProperties _textProperties;
 

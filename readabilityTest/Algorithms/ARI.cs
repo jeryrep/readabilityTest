@@ -1,6 +1,6 @@
 ﻿namespace readabilityTest.Algorithms
 {
-    internal class Ari
+    internal class Ari : IAlgorithm
     {
         private readonly TextProperties _textProperties;
 
@@ -10,10 +10,12 @@
             {
                 return (int)ReadabilityScore + 5;
             }
-            else if (ReadabilityScore >= 3 && ReadabilityScore <= 12)
+            
+            if (ReadabilityScore >= 3 && ReadabilityScore <= 12)
             {
                 return (int)ReadabilityScore + 6;
             }
+            
             return 24;
         }
 
