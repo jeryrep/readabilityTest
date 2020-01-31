@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace readabilityTest
+namespace readabilityTest.Algorithms
 {
     internal class Smog
     {

@@ -1,4 +1,4 @@
-﻿namespace readabilityTest
+﻿namespace readabilityTest.Algorithms
 {
     internal class Ari
     {
